@@ -54,7 +54,7 @@ setInterval(async () => {
         }
       });
 
-      information.innerHTML = "Shortest: " + shortest == horizon ? "1000+" : shortest;
+      information.innerHTML = "Shortest: " + (shortest == horizon ? "1000+" : shortest);
 
       if (ignited && flag == "warning") warning.sound.play();
       else if (ignited && flag == "danger") danger.sound.play();
